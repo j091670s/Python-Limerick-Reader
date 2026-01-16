@@ -1,0 +1,5 @@
+A compiler grumbled one day
+At syntax that wandered astray
+Fix braces and types
+Remove missing pipes
+And warnings will all go away

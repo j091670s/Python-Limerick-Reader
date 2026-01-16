@@ -33,6 +33,7 @@ def findLastSyllable(phonemes):
 
     lastSyllablePosition = -1
     for i in range(len(phonemes) -1, - 1, - 1):
+        
         if phonemes[i][-1].isdigit():
             lastSyllablePosition = i
             break
@@ -122,7 +123,6 @@ def validLimerick(limeRick, dictionary):
     lastRhymes = []
     
     syllablesInLine = 0
-    #bBadSyllables = False
     bBadRhymes = False
 
     for line in limeRick:
@@ -159,8 +159,6 @@ def validLimerick(limeRick, dictionary):
     a_diff_b = (lastRhymes[0] != lastRhymes[2])
     bBadRhymes = not (a_ok and b_ok and a_diff_b)
 
-    #if  not (lastRhymes[0] == lastRhymes[1] == lastRhymes[4] and lastRhymes[2] == lastRhymes[3]):
-        #bBadRhymes = True
 
     if bBadRhymes and bBadSyllables:
         return 'FAILED LIMERICK - bad syllable count and bad rhyme'

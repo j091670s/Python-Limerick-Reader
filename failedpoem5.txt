@@ -1,0 +1,5 @@
+A student who coded in C
+Loved pointers and memory
+He leaked every byte
+Through long debug nights
+And still claimed his program was C
